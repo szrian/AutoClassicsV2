@@ -1,0 +1,15 @@
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\bin\Debug\net8.0\SZ.AutoClassics.Aplicacao.deps.json
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\bin\Debug\net8.0\SZ.AutoClassics.Aplicacao.dll
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\bin\Debug\net8.0\SZ.AutoClassics.Aplicacao.pdb
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\bin\Debug\net8.0\SZ.AutoClassics.Dominio.dll
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\bin\Debug\net8.0\SZ.AutoClassics.Dominio.pdb
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\SZ.AutoClassics.Aplicacao.csproj.AssemblyReference.cache
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\SZ.AutoClassics.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\SZ.AutoClassics.Aplicacao.AssemblyInfoInputs.cache
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\SZ.AutoClassics.Aplicacao.AssemblyInfo.cs
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\SZ.AutoClassics.Aplicacao.csproj.CoreCompileInputs.cache
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\SZ.AutoC.A6081B9F.Up2Date
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\SZ.AutoClassics.Aplicacao.dll
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\refint\SZ.AutoClassics.Aplicacao.dll
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\SZ.AutoClassics.Aplicacao.pdb
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Aplicacao\obj\Debug\net8.0\ref\SZ.AutoClassics.Aplicacao.dll

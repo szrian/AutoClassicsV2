@@ -1,0 +1,35 @@
+﻿@model SZ.AutoClassics.Aplicacao.ViewModels.ApplicationUserViewModel
+
+<h2 style="margin-bottom: 30px">Meu Perfil</h2>
+<hr />
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2" style="font-size: 30px">
+			<i class="fa-solid fa-circle-user fa-2xl"></i>
+		</div>
+		<div class="col-md-3">
+			<p style="font-weight: bold; font-size: 20px; color: black"><i class="fa-solid fa-user fa-lg"></i> &nbsp; @Model.UserName</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-3">
+			<p style="font-weight: bold; font-size: 20px; color: black"><i class="fa-solid fa-envelope fa-lg"></i> &nbsp; @Model.Email</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-3">
+			<p style="font-weight: bold; font-size: 20px; color: black"><i class="fa-solid fa-mobile-screen-button fa-lg"></i> &nbsp; @Model.PhoneNumber</p>
+		</div>
+	</div>
+
+	<a class="btn btn-primary" asp-area="" asp-controller="Account" asp-action="Editar" asp-route-id="@Model.Id">Editar</a>
+	<a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
+</div>
+
+
+<script src="https://kit.fontawesome.com/d05f4d26cd.js" crossorigin="anonymous"></script>

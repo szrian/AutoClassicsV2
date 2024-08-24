@@ -1,0 +1,36 @@
+﻿@using SZ.AutoClassics.Aplicacao.ViewModels
+
+@model IEnumerable<AnuncioViewModel>
+
+@{
+	ViewData["Title"] = "Início";
+}
+
+<h2>Anúncios Recentes</h2>
+
+<div class="container">
+	<div class="row">
+		@foreach (var anuncio in Model)
+		{
+			<div class="col-md-3">
+				<div class="card" style="width: 18rem;">
+					<img src="~/images/@anuncio.ImagemUrl.Split(";")[0]" class="card-img-top" alt="Foto do anúncio" style="width: 286px; height: 200px">
+					<div class="card-body" style="width: 290px; height: 270px">
+						<h5 class="card-title">@anuncio.Titulo</h5> <br>
+						<h4>@anuncio.Preco.ToString("c")</h4>
+						@if (anuncio.Descricao.Length > 120)
+						{
+							<p class="card-text">@Html.Raw(anuncio.Descricao.Length > 120 ? anuncio.Descricao.Substring(0, 120) + "..." : anuncio.Descricao)</p>
+						}
+						else
+						{
+							<p class="card-text">@anuncio.Descricao</p>
+						}
+
+						<a class="btn btn-primary" asp-controller="Anuncio" asp-action="AnuncioDetalhes" asp-route-id="@anuncio.Id">Ver Detalhes</a>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+</div>

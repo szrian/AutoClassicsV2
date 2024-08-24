@@ -1,0 +1,20 @@
+﻿@model SZ.AutoClassics.Aplicacao.ViewModels.AnuncioViewModel
+
+<h2 style="margin-bottom: 40px">Editar Anúncio</h2>
+
+<form enctype="multipart/form-data" asp-action="Editar">
+
+	<div asp-validation-summary="All" class="text-danger"></div>
+
+	<input type="hidden" asp-for="Id" />
+	<input type="hidden" asp-for="UsuarioId" />
+	<input type="hidden" asp-for="ImagemUrl" />
+	<input type="hidden" asp-for="DataCriacao" />
+	<input type="hidden" asp-for="Ativo" />
+	<partial name="_Form" />
+
+	<div class="form-group" style="padding-top: 30px">
+		<input type="submit" value="Editar" class="btn btn-primary" />
+		<a class="btn btn-info" asp-action="Index">Voltar</a>
+	</div>
+</form>

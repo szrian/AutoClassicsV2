@@ -1,0 +1,181 @@
+﻿@model SZ.AutoClassics.Aplicacao.ViewModels.AnuncioViewModel
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<span>Localização</span>
+				<select asp-for="EstadoId" class="form-select select" id="selectEstados" asp-items='@new SelectList(Model.Estados, "Id", "UF")'>
+					<option disabled selected>UF</option>
+				</select>
+				<span asp-validation-for="EstadoId" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Titulo" class="control-label"></label>
+				<input asp-for="Titulo" class="form-control" />
+				<span asp-validation-for="Titulo" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<span>Município</span>
+				<select asp-for="CidadeId" id="selectCidades" class="form-select select" asp-items='@new SelectList(Model.Cidades, "Id", "Descricao")'>
+					<option disabled selected>Selecione a cidade</option>
+				</select>
+				<span asp-validation-for="CidadeId" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Preco" class="control-label"></label>
+				<input asp-for="Preco" class="form-control" />
+				<span asp-validation-for="Preco" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label asp-for="Descricao" class="control-label"></label>
+				<textarea cols="40" rows="5" asp-for="Descricao" class="form-control"></textarea>
+				<span asp-validation-for="Descricao" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Marca" class="control-label"></label>
+				<input asp-for="Marca" class="form-control" />
+				<span asp-validation-for="Marca" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Ano" class="control-label"></label>
+				<input asp-for="Ano" class="form-control" />
+				<span asp-validation-for="Ano" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Imagens" class="control-label"></label>
+				<div class="custom-file">
+					<input type="file" class="custom-file-input" asp-for="Imagens" multiple />
+					<label data-browse="Procurar" style="width: 400px" class="custom-file-label"></label>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Cor" class="control-label"></label>
+				<input asp-for="Cor" class="form-control" />
+				<span asp-validation-for="Cor" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="NumeroPortas" class="control-label"></label>
+				<input asp-for="NumeroPortas" class="form-control" />
+				<span asp-validation-for="NumeroPortas" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-check">
+				<label class="form-check-label" asp-for="Cambio"></label> <br />
+				<input class="form-check-input" value="Manual" type="radio" asp-for="Cambio" checked> Manual <br />
+				<input class="form-check-input" value="Automático" type="radio" asp-for="Cambio"> Automático
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Combustivel" class="control-label"></label>
+				<input asp-for="Combustivel" class="form-control" />
+				<span asp-validation-for="Combustivel" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-check">
+				<label class="form-check-label" asp-for="Carroceria"></label> <br />
+				<input class="form-check-input" value="Hatch" type="radio" asp-for="Carroceria" checked> Hatch <br />
+				<input class="form-check-input" value="Sedã" type="radio" asp-for="Carroceria"> Sedã
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Motor" class="control-label"></label>
+				<input asp-for="Motor" class="form-control" />
+				<span asp-validation-for="Motor" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="Quilometragem" class="control-label"></label>
+				<input asp-for="Quilometragem" class="form-control" />
+				<span asp-validation-for="Quilometragem" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3 style="padding-top: 50px">Opcionais</h3>
+			<hr />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" asp-for="Radio" /> Rádio
+				</label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" asp-for="ArCondicionado" /> Ar Condicionado
+				</label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" asp-for="TetoSolar" /> Teto Solar
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" asp-for="AirBag" /> AirBag
+				</label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" asp-for="TravasEletricas" /> Travas Elétricas
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/anuncio.js" asp-append-version="true"></script>

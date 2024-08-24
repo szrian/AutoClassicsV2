@@ -1,0 +1,41 @@
+﻿@model SZ.AutoClassics.Aplicacao.ViewModels.ApplicationUserViewModel
+
+<h2 style="margin-bottom: 30px">Deseja Bloquear este usuário?</h2>
+<hr />
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">
+			<i class="fa-solid fa-circle-user fa-2xl"></i>
+		</div>
+		<div class="col-md-3">
+			<p style="font-weight: bold; font-size: 20px; color: black">Usuário: @Model.UserName</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-3">
+			<p style="font-weight: bold; font-size: 20px; color: black">Email: @Model.Email</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-3">
+			<p style="font-weight: bold; font-size: 20px; color: black">Número: @Model.PhoneNumber</p>
+		</div>
+	</div>
+
+	<form asp-action="BloquearUsuario">
+		<input type="hidden" asp-for="Id" />
+
+		<div class="form-group" style="padding-top: 30px">
+			<input type="submit" value="Bloquear" class="btn btn-danger" />
+			<a class="btn btn-primary" asp-area="Admin" asp-controller="Admin" asp-action="ListarUsuarios">Voltar</a>
+		</div>
+	</form>
+</div>
+
+
+<script src="https://kit.fontawesome.com/d05f4d26cd.js" crossorigin="anonymous"></script>

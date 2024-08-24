@@ -1,0 +1,17 @@
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\bin\Debug\net8.0\SZ.AutoClassics.Dados.deps.json
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\bin\Debug\net8.0\SZ.AutoClassics.Dados.runtimeconfig.json
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\bin\Debug\net8.0\SZ.AutoClassics.Dados.dll
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\bin\Debug\net8.0\SZ.AutoClassics.Dados.pdb
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\bin\Debug\net8.0\SZ.AutoClassics.Dominio.dll
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\bin\Debug\net8.0\SZ.AutoClassics.Dominio.pdb
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoClassics.Dados.csproj.AssemblyReference.cache
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoClassics.Dados.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoClassics.Dados.AssemblyInfoInputs.cache
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoClassics.Dados.AssemblyInfo.cs
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoClassics.Dados.csproj.CoreCompileInputs.cache
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoC.8F1A073B.Up2Date
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoClassics.Dados.dll
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\refint\SZ.AutoClassics.Dados.dll
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoClassics.Dados.pdb
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\SZ.AutoClassics.Dados.genruntimeconfig.cache
+D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Dados\obj\Debug\net8.0\ref\SZ.AutoClassics.Dados.dll

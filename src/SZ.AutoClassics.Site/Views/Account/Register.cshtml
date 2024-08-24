@@ -1,0 +1,41 @@
+﻿@model SZ.AutoClassics.Aplicacao.ViewModels.RegistroViewModel
+
+<table>
+    <tr>
+        <td><img src="~/images/registro1.jpg" alt="Registrar Usuário" width="80" height="60" /></td>
+        <td>
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h4>Registrar Usuário</h4>
+                    <form asp-controller="Account" asp-action="Register" method="post">
+                        <hr />
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="UserName"> </label> &nbsp; <span style="font-size: smaller; color: gray">não utilize espaços</span>
+                            <input asp-for="UserName" class="form-control" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="UserEmail"> </label>
+                            <input asp-for="UserEmail" class="form-control" />
+                            <span asp-validation-for="UserEmail" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="NumeroTelefone"> </label>
+                            <input asp-for="NumeroTelefone" class="form-control" />
+                            <span asp-validation-for="NumeroTelefone" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Senha"></label> &nbsp; <span style="font-size: smaller; color: gray">Use letras maiúsculas, números e caracteres especiais</span>
+                            <input asp-for="Senha" class="form-control" />
+                            <span asp-validation-for="Senha" class="text-danger"></span>
+                        </div>
+                        <div class="form-group" style="margin-top: 10px">
+                            <input type="submit" class="btn btn-success" value="Registrar" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>

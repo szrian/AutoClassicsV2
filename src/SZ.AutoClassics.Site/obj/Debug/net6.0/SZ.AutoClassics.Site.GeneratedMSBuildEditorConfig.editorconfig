@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SZ.AutoClassics.Site
+build_property.RootNamespace = SZ.AutoClassics.Site
+build_property.ProjectDir = D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Site\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Backup\work\AutoClassics\src\SZ.AutoClassics.Site
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Areas/Admin/Views/Admin/BloquearUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQmxvcXVlYXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Areas/Admin/Views/Admin/DesbloquearUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRGVzYmxvcXVlYXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Areas/Admin/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Areas/Admin/Views/Admin/ListarUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTGlzdGFyVXN1YXJpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Areas/Admin/Views/Admin/ListarUsuariosBloqueados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTGlzdGFyVXN1YXJpb3NCbG9xdWVhZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Account/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Account/MeuPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNZXVQZXJmaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/AnuncioSalvo/AnunciosSalvos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1NhbHZvXEFudW5jaW9zU2Fsdm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Anuncio/AnuncioDetalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xBbnVuY2lvRGV0YWxoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Anuncio/CriarAnuncio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xDcmlhckFudW5jaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Anuncio/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Anuncio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Anuncio/MeusAnuncios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xNZXVzQW51bmNpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Anuncio/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb1xfRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-m6ksa3nju8
+
+[D:/Backup/work/AutoClassics/src/SZ.AutoClassics.Site/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-itmlul47ho

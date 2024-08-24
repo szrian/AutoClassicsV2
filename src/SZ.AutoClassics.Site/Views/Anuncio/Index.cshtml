@@ -1,0 +1,62 @@
+﻿@model SZ.AutoClassics.Aplicacao.ViewObjects.AnunciosFiltrosViewObject
+
+@{
+	ViewData["Title"] = "Todos anúncios";
+}
+
+<div><h2 style="margin-bottom: 40px">@ViewData["Title"]</h2></div>
+
+<div class="container">
+	<div class="row">
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+		@foreach (var anuncio in Model.Anuncios)
+		{
+			<div class="col-md-12">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="~/images/@anuncio.ImagemUrl.Split(";")[0]" class="img-fluid rounded-start" alt="Foto do anúncio" style="width: 181px; height: 211px">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">@anuncio.Titulo</h5>
+								<h4>@anuncio.Preco.ToString("C")</h4>
+								@if (anuncio.Descricao.Length > 80)
+								{
+									<p class="card-text">@Html.Raw(anuncio.Descricao.Length > 80 ? anuncio.Descricao.Substring(0, 80) + "..." : anuncio.Descricao)</p>
+								}
+								else
+								{
+									<p class="card-text">@anuncio.Descricao</p>
+								}
+								<a class="btn btn-primary" asp-controller="Anuncio" asp-action="AnuncioDetalhes" asp-route-id="@anuncio.Id">Detalhes</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+</div>
+@if (Model.Anuncios.Count() > 0)
+{
+	<div>
+		<ul class="pagination">
+			<li class="page-item">
+				@Html.ActionLink("Anterior", "Index", "Anuncio", new { pagina = Model.Filtros.Pagina - 1 }, new { @class = "page-link" })
+			</li>
+			@for (int i = 0; i < Model.Filtros.TotalRegistros / 20; i++)
+			{
+				<li class="page-item">
+					@Html.ActionLink((i + 1).ToString(), "Index", "Anuncio", new { pagina = i }, new { @class = "page-link" })
+				</li>
+			}
+			<li class="page-item">
+				@Html.ActionLink("Próximo", "Index", "Anuncio", new { pagina = Model.Filtros.Pagina + 1 }, new { @class = "page-link" })
+			</li>
+		</ul>
+	</div>
+} else
+{
+	<h2 class="text-danger">Nenhum anúncio encontrado :(</h2>
+}

@@ -1,0 +1,54 @@
+﻿@model SZ.AutoClassics.Aplicacao.ViewObjects.UsuariosFiltrosViewObject
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Todos Usuários</h2>
+		</div>
+	</div>
+	<div asp-validation-summary="All" class="text-danger"></div>
+	@foreach (var usuario in Model.Usuarios)
+	{
+		<div class="row">
+			<div class="col-md-12" style="margin-top: 20px">
+				<div class="card" style="width: 18rem;">
+					<div class="card-header">
+						<i class="fa-solid fa-circle-user fa-2xl"></i> @usuario.UserName
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><i class="fa-solid fa-at"></i> @usuario.Email</li>
+						<li class="list-group-item"><i class="fa-solid fa-phone"></i> @usuario.PhoneNumber</li>
+						<li class="list-group-item"><a class="btn btn-danger" asp-area="Admin" asp-controller="Admin" asp-action="BloquearUsuario" asp-route-id="@usuario.Id">Bloquear</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	}
+
+	@if (Model.Usuarios.Count() > 0)
+	{
+		<div>
+			<ul class="pagination">
+				<li class="page-item">
+					@Html.ActionLink("Anterior", "ListarUsuarios", "Admin", new { pagina = Model.Pagina - 1 }, new { @class = "page-link" })
+				</li>
+				@for (int i = 0; i < Model.TotalRegistros / 20; i++)
+				{
+					<li class="page-item">
+						@Html.ActionLink((i + 1).ToString(), "ListarUsuarios", "Admin", new { pagina = i }, new { @class = "page-link" })
+					</li>
+				}
+				<li class="page-item">
+					@Html.ActionLink("Próximo", "ListarUsuarios", "Admin", new { pagina = Model.Pagina + 1 }, new { @class = "page-link" })
+				</li>
+			</ul>
+		</div>
+	}
+	else
+	{
+		<h2 class="text-danger">Nenhum anúncio encontrado :(</h2>
+	}
+</div>
+
+
+<script src="https://kit.fontawesome.com/d05f4d26cd.js" crossorigin="anonymous"></script>

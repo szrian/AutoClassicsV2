@@ -1,0 +1,211 @@
+﻿@model SZ.AutoClassics.Aplicacao.ViewModels.AnuncioViewModel;
+
+<input type="hidden" asp-for="Id" id="anuncioId" />
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width: 750px; height: 430px;">
+				<div class="carousel-inner">
+				</div>
+
+				<a class="carousel-control-prev" href="#meuCarrossel" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#meuCarrossel" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Próximo</span>
+				</a>
+			</div>
+		</div>
+		<div class="col-xl-4">
+		</div>
+		<div class="col-xl-4">
+			<div class="card">
+				<div class="card-body">
+					<h2>Anuncio por</h2>
+					<p style="font-weight: bolder; font-size: large"> <i class="fa-solid fa-user"></i> @Model.Usuario.UserName</p>
+					<hr />
+					<h2>Contatos</h2>
+					<p style="font-weight: bolder; font-size: large"> <i class="fa-solid fa-envelope"></i> @Model.Usuario.Email</p>
+					@if (Model.Usuario.PhoneNumber != null)
+					{
+						<p style="font-weight: bolder; font-size: large"> <i class="fa-solid fa-phone"></i> @Model.Usuario.PhoneNumber</p>
+					}
+				</div>
+			</div>
+			<span style="font-size: small">
+				Publicado em @Model.DataCriacao.ToShortDateString() ás @Model.DataCriacao.ToShortTimeString()
+			</span>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>@Model.Titulo</h2>
+					<p style="font-weight: bold">@Model.Marca</p>
+					<h3>@Model.Preco.ToString("C")</h3>
+
+					<p style="margin-top: 30px; font-weight: 400">@Model.Descricao</p>
+					<h3 style="padding-top: 30px">Características</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<span style="font-size: large; font-weight:bolder">Ano</span> <br />
+					<span style="font-weight: 500">@Model.Ano</span>
+				</div>
+				<div class="col-md-3">
+					<span style="font-size: large; font-weight:bolder">KM</span> <br />
+					<span style="font-weight: 500">@Model.Quilometragem</span>
+				</div>
+				<div class="col-md-3">
+					<span style="font-size: large; font-weight:bolder">Câmbio</span> <br />
+					<span style="font-weight: 500">@Model.Cambio</span>
+				</div>
+				<div class="col-md-3">
+					<span style="font-size: large; font-weight:bolder">Carroceria</span> <br />
+					<span style="font-weight: 500">@Model.Carroceria</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<span style="font-size: large; font-weight:bolder">Combustível</span> <br />
+					<span style="font-weight: 500">@Model.Combustivel</span>
+				</div>
+				<div class="col-md-3">
+					<span style="font-size: large; font-weight:bolder">Motor</span> <br />
+					<span style="font-weight: 500">@Model.Motor</span>
+				</div>
+				<div class="col-md-3">
+					<span style="font-size: large; font-weight:bolder">Portas</span> <br />
+					<span style="font-weight: 500">@Model.NumeroPortas</span>
+				</div>
+				<div class="col-md-3">
+					<span style="font-size: large; font-weight:bolder">Cor</span> <br />
+					<span style="font-weight: 500">@Model.Cor</span>
+				</div>
+				<div class="col-md-3">
+					<h3 style="margin-top: 30px; margin-bottom: 15px">Opcionais</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					@if (Model.AirBag == false)
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-xmark"></i> AirBag</span>
+					}
+					else
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-check"></i> AirBag</span>
+					}
+				</div>
+				<div class="col-md-3">
+					@if (Model.ArCondicionado == false)
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-xmark"></i> Ar Condicionado</span>
+					}
+					else
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-check"></i> Ar Condicionado</span>
+					}
+				</div>
+				<div class="col-md-3">
+					@if (Model.TravasEletricas == false)
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-xmark"></i> Trava Elétrica</span>
+					}
+					else
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-check"></i> Trava Elétrica</span>
+					}
+				</div>
+				<div class="col-md-3">
+					@if (Model.TetoSolar == false)
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-xmark"></i> Teto Solar</span>
+					}
+					else
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-check"></i> Teto Solar</span>
+					}
+				</div>
+				<div class="col-md-3">
+					@if (Model.Radio == false)
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-xmark"></i> Rádio</span>
+					}
+					else
+					{
+						<span style="font-weight: 500"> <i class="fa-solid fa-check"></i> Rádio</span>
+					}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h3 style="margin-top: 30px; margin-bottom: 10px"> <i class="fa-solid fa-location-dot"></i> Localização </h3> <br />
+					<span style="font-weight: 500">@Model.CidadeAnuncio - @Model.Uf</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3" style="margin-top: 10px">
+			@if (ViewBag.UsuarioLogadoId == Model.UsuarioId || User.IsInRole("Admin"))
+			{
+				<form asp-action="Excluir" id="excluirAnuncio">
+					<a class="btn btn-primary" asp-area="" asp-controller="Anuncio" asp-action="Editar" asp-route-id="@Model.Id">Editar</a>
+
+					<input type="hidden" asp-for="Id" />
+					<input type="submit" value="Excluir" class="btn btn-danger" />
+				</form>
+			}
+			else
+			{
+				<a class="btn btn-primary" asp-area="" asp-controller="Anuncio" asp-action="Index">Voltar</a>
+			}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<button class="btn btn-primary" style="margin-top: 10px" onclick="SalvarAnuncio()"><i class="fa-solid fa-star"></i> Salvar Anúncio</button>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	var imagens = @Html.Raw(Json.Serialize(Model.CaminhoImagens));
+
+	var carouselInner = document.querySelector("#meuCarrossel .carousel-inner");
+
+	imagens.forEach(function (imagem, index) {
+		var slide = document.createElement("div");
+		slide.classList.add("carousel-item");
+
+		if (index === 0) {
+			slide.classList.add("active");
+		}
+
+		var img = document.createElement("img");
+		img.src = "/images/" + imagem;
+		img.alt = "Slide " + (index + 1);
+		img.style.width = "100%";
+		img.style.height = "100%";
+
+		slide.appendChild(img);
+		carouselInner.appendChild(slide);
+	});
+
+	var carrossel = new bootstrap.Carousel(document.querySelector("#meuCarrossel"));
+	carrossel.pause();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/d05f4d26cd.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.js"></script>
+<script src="~/js/anuncioDetalhes.js" asp-append-version="true"></script>

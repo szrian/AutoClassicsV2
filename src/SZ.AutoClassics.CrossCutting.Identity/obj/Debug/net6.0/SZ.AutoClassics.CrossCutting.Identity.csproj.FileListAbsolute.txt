@@ -1,0 +1,11 @@
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\bin\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.deps.json
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\bin\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.dll
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\bin\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.pdb
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\obj\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.GeneratedMSBuildEditorConfig.editorconfig
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\obj\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.AssemblyInfoInputs.cache
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\obj\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.AssemblyInfo.cs
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\obj\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.csproj.CoreCompileInputs.cache
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\obj\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.dll
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\obj\Debug\net6.0\refint\SZ.AutoClassics.CrossCutting.Identity.dll
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\obj\Debug\net6.0\SZ.AutoClassics.CrossCutting.Identity.pdb
+F:\work\AutoClassics\src\SZ.AutoClassics.CrossCutting.Identity\obj\Debug\net6.0\ref\SZ.AutoClassics.CrossCutting.Identity.dll
